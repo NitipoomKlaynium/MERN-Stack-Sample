@@ -5,6 +5,7 @@ const express = require('express');
 const app = express();
 
 const mongoose = require('mongoose');
+const cors = require('cors');
 
 mongoose.Promise = global.Promise;
 
@@ -17,6 +18,8 @@ app.use((req, res, next) => {
 });
 
 app.use('/api/posts', posts);
+
+app.use(cors());
 
 // connect to database
 mongoose.connect(process.env.MONGO_URI)

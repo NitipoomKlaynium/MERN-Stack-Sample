@@ -1,0 +1,25 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #0f0f0f;
+    color: #fff;
+}
+
+.navbar-height {
+    height: 76px;
+}
+  
+.navbar-container {
+    height: 100%;
+    position: relative;
+}
+
+.navbar-title {
+    padding-left: 20px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
